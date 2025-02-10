@@ -6,9 +6,9 @@ from dash.dependencies import Input, Output
 import pandas as pd
 import plotly.express as px
 ###########################################################################################################################################
-df_trials = pd.read_csv("trials.csv")
-df_mesh = pd.read_csv("mesh.csv")
-df_loc = pd.read_csv("loc.csv")
+df_trials = pd.read_csv("data/trials.csv")
+df_mesh = pd.read_csv("data/mesh.csv")
+df_loc = pd.read_csv("data/loc.csv")
 ###########################################################################################################################################
 #creation de l'application dash avec le theme Cerulean 
 app = dash.Dash("oncoTrials", external_stylesheets=[dbc.themes.CERULEAN], suppress_callback_exceptions=True) 
