@@ -418,8 +418,10 @@ app.layout = html.Div([
     navbar, tabs, html.Div(id='tab-content'), footer
 ])
 
+server = app.server
+
 if __name__ == "__main__":
-    # import os
-    # port = int(os.environ.get("PORT", 8080))  # Render utilise le port 8080
+    import os
+    port = int(os.environ.get("PORT", 8080))  # Render utilise le port 8080
     app.run_server(debug = True)
 
