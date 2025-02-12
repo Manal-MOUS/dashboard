@@ -421,7 +421,7 @@ app.layout = html.Div([
 server = app.server
 
 if __name__ == "__main__":
-    # import os
-    # port = int(os.environ.get("PORT", 8080))  # Render utilise le port 8080
-    app.run_server(debug = True)
+    import os
+    port = int(os.environ.get("PORT", 8080))  # Render utilise le port 8080
+    app.run_server(debug = True, port)
 
